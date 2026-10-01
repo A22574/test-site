@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serenity - массаж в Махачкале</title>
+<meta name="description" content="Массаж в SPA Serenity в Махачкале: 10 видов массажа от 2 000 ₽, ароматерапия в каждом сеансе, массаж для мужчин и женщин, детский массаж с выездом. Запишитесь онлайн.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#top" aria-label="Serenity, на главную"><img src="img/logo.png" alt="" width="36" height="36"><b>Serenity</b></a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#uslugi">Массаж и цены</a>
+      <a href="#vizit">Как записаться</a>
+      <a href="#otzyvy">Отзывы</a>
+      <a href="#voprosy">Вопросы</a>
+      <a href="#zapis">Контакты</a>
+    </nav>
+    <div class="top-r">
+      <a class="btn sm" href="#zapis">Записаться</a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badges">
+        <span class="badge cy">Serenity · Массаж</span>
+        <span class="badge">Махачкала · Ленинкент</span>
+      </div>
+      <h1>Массаж, который снимает напряжение там, где оно скопилось</h1>
+      <p class="lead">Покажите на схеме, где тянет, зажимает или устало. Мастер подберёт массаж, а вы запишетесь за минуту. Массаж для мужчин и женщин, детский массаж с выездом.</p>
+      <div class="hero-actions">
+        <a class="btn hot" href="#zapis">Записаться на массаж</a>
+        <a class="link" href="#uslugi">Смотреть виды массажа и цены</a>
+      </div>
+      <ul class="stats">
+        <li><strong>4,9</strong><span>рейтинг в 2ГИС и Яндекс Картах</span></li>
+        <li><strong>1500+</strong><span>гостей</span></li>
+        <li><strong>10:00-20:00</strong><span>без выходных</span></li>
+      </ul>
+    </div>
+
+    <div class="map" id="map">
+      <div class="fig">
+        <svg viewBox="0 0 320 600" role="img" aria-label="Схема тела со спины: выберите зону, где есть напряжение">
+          <defs>
+            <radialGradient id="heat">
+              <stop offset="0" stop-color="#EAFDFF" stop-opacity=".95"/>
+              <stop offset=".32" stop-color="#4DE3F7" stop-opacity=".85"/>
+              <stop offset=".7" stop-color="#00A8C4" stop-opacity=".4"/>
+              <stop offset="1" stop-color="#00A8C4" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <g class="body-shape">
+            <ellipse cx="160" cy="48" rx="31" ry="38"/>
+            <rect x="147" y="80" width="26" height="36" rx="10"/>
+            <path d="M96 116Q160 100 224 116Q246 124 248 150L236 316Q160 340 84 316L72 150Q74 124 96 116Z"/>
+            <path d="M80 128Q52 140 48 178L36 318Q34 336 50 336Q66 336 68 318L86 214Z"/>
+            <path d="M240 128Q268 140 272 178L284 318Q286 336 270 336Q254 336 252 318L234 214Z"/>
+            <path d="M86 300Q160 332 234 300L240 358Q160 384 80 358Z"/>
+            <path d="M84 354L157 370L154 456Q148 500 138 560Q136 582 118 582Q100 582 102 560Q98 500 92 456Z"/>
+            <path d="M236 354L163 370L166 456Q172 500 182 560Q184 582 202 582Q220 582 218 560Q222 500 228 456Z"/>
+          </g>
+          <path class="spine" d="M160 92V344"/>
+          <path class="spine" d="M126 150q34 40 68 0M124 176q36 44 72 0" style="stroke-dasharray:1 6"/>
+          <g class="z" data-z="neck"><circle cx="160" cy="102" r="50"/><circle cx="104" cy="134" r="46"/><circle cx="216" cy="134" r="46"/></g>
+          <g class="z" data-z="upper"><circle cx="160" cy="192" r="80"/></g>
+          <g class="z" data-z="lower"><circle cx="160" cy="292" r="66"/></g>
+          <g class="z" data-z="legs"><circle cx="124" cy="412" r="56"/><circle cx="196" cy="412" r="56"/><circle cx="122" cy="502" r="44"/><circle cx="198" cy="502" r="44"/></g>
+          <g class="z" data-z="feet"><circle cx="116" cy="568" r="32"/><circle cx="204" cy="568" r="32"/></g>
+        </svg>
+      </div>
+      <div>
+        <h2 class="map-h">Где напряжение?</h2>
+        <p class="map-sub">Выберите зону на схеме или в списке.</p>
+        <div class="zones" id="zones" role="group" aria-label="Зоны тела"></div>
+        <div class="rec" id="rec" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint" id="uslugi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Прайс-лист</span>
+      <h2>Виды массажа и цены</h2>
+      <p>Десять видов массажа от 20 минут до часа. Не знаете, что выбрать? Расскажите администратору, что беспокоит, и вам подберут подходящий.</p>
+    </div>
+    <ul class="svc" id="svc"></ul>
+    <p class="svc-note">В каждый сеанс входят консультация мастера, ароматерапия и отдых после процедуры.</p>
+  </div>
+</section>
+
+<section class="sec" id="vizit">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Пять минут</span><h2>Как записаться</h2><p>Остальное мы берём на себя.</p></div>
+    <ol class="steps">
+      <li><h3>Заявка</h3><p>Оставьте заявку на сайте, напишите в WhatsApp или запишитесь онлайн.</p></li>
+      <li><h3>Звонок</h3><p>Администратор свяжется с вами и подберёт удобное время.</p></li>
+      <li><h3>Приезд</h3><p>Приезжайте в Serenity в посёлок Ленинкент. Рядом есть парковка для гостей.</p></li>
+      <li><h3>Отдых</h3><p>Мастер проконсультирует и сделает массаж с ароматерапией. Потом можно спокойно отдохнуть.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec tint" id="pochemu">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Территория Serenity</span><h2>Почему у нас спокойно</h2><p>Место, где можно выдохнуть и никуда не спешить.</p></div>
+    <div class="why">
+      <div><h3>Для мужчин и женщин</h3><p>Есть детский массаж с выездом.</p></div>
+      <div><h3>Закрытая территория</h3><p>Внутри только вы и ваша компания, без посторонних глаз.</p></div>
+      <div><h3>Все мастера с медицинским образованием</h3><p>Массаж делают специалисты с профильным медицинским образованием.</p></div>
+      <div><h3>Всё для комфорта</h3><p>Халаты, тапочки, полотенца, косметика, фен, даже резинки для волос уже ждут вас.</p></div>
+      <div><h3>Свой бар Twins</h3><p>Можно перекусить и заказать напиток, не выходя с территории.</p></div>
+      <div><h3>Чистота и тишина</h3><p>Здесь чисто и тихо, никто не торопит и не шумит.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Продлите день</span><h2>Дополните массаж отдыхом</h2><p>Бассейн, хаммам и терраса находятся под одной крышей с массажными кабинетами.</p></div>
+    <ul class="offers">
+      <li><h3>Хаммам</h3><p>Тепло, пар и полное обнуление. Хорошо подготавливает тело к массажу.</p><b>от 3 900 ₽</b></li>
+      <li><h3>SPA-программы</h3><p>Комплексный уход для тела и души в одном визите.</p><b>от 4 200 ₽</b></li>
+      <li><h3>Подарочный сертификат</h3><p>Получательница сама выберет: массаж, хаммам, бассейн или всё сразу. Красивое оформление и гибкий срок действия.</p><b>от 5 000 ₽</b></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec tint" id="otzyvy">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:40px">
+      <span class="kicker">Отзывы · Проверено</span>
+      <h2>Что говорят гости</h2>
+      <div class="rate"><strong>4,9</strong><span>из 5, более 40 отзывов в 2ГИС и Яндекс Картах</span></div>
+    </div>
+    <div class="reviews">
+      <blockquote class="q-big">
+        <p>«Делала медовый массаж с цитрусовыми ароматами - это что-то невероятное. Интенсивность подобрали прям под меня. Ощущение, будто на курорте побывала.»</p>
+        <cite>Елизавета М.<span>отзыв в 2ГИС</span></cite>
+      </blockquote>
+      <div class="q-side">
+        <blockquote><p>«Хочу отметить администратора, очень отзывчивая. Быстро подобрали удобное время, учли все мои пожелания по массажу, а потом подробно рассказали, как ухаживать после.»</p><cite>Виктория З.<span>отзыв в 2ГИС</span></cite></blockquote>
+        <blockquote><p>«Полная перезагрузка. Тихо, уютно, мастерам доверяешь с первой минуты. Ушла отдохнувшая и спокойная, вернусь ещё.»</p><cite>Диана М.<span>отзыв в Яндекс Картах</span></cite></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="voprosy">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Вопросы</span><h2>Частые вопросы</h2></div>
+    <div class="faq">
+      <details><summary>Как часто можно ходить на массаж?</summary><p>Релакс-массаж можно хоть каждую неделю, это полезно.</p></details>
+      <details><summary>Можно прийти одному или с компанией?</summary><p>И так, и так. Один вы спокойно отдохнёте, вас никто не побеспокоит. С компанией будет веселее.</p></details>
+      <details><summary>Кому подходит массаж?</summary><p>Мы делаем массаж для мужчин и женщин. Есть детский массаж с выездом.</p></details>
+      <details><summary>Что взять с собой?</summary><p>Почти ничего. Полотенца и всё для отдыха дадим на месте. Возьмите купальник и хорошее настроение.</p></details>
+      <details><summary>Можно ли массаж при беременности?</summary><p>Да, есть массаж для беременных на 50 минут: бережная работа с шейно-воротниковой зоной, руками и ногами, на боку или сидя. Скажите о беременности при записи.</p></details>
+      <details><summary>Есть ли противопоказания?</summary><p>Да, у массажа они есть, например повышенная температура, острые воспаления и кожные инфекции. Перед сеансом мастер уточнит ваше самочувствие. При хронических болезнях лучше заранее посоветоваться с врачом.</p></details>
+      <details><summary>Можно ли отменить запись?</summary><p>Да, отмена бесплатна за 2 часа до сеанса.</p></details>
+      <details><summary>Где оставить машину?</summary><p>Рядом есть парковка для гостей, приезжайте на машине.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec book" id="zapis">
+  <div class="wrap book-grid">
+    <div>
+      <span class="kicker">Заявка // Параметры записи</span>
+      <h2>Красивый день начинается здесь</h2>
+      <p class="lead-b">Оставьте заявку, администратор подберёт удобное время и ответит на все вопросы. Бесплатная отмена за 2 часа. Не угадаете с программой - подберём другую прямо на месте.</p>
+      <div class="book-cta">
+        <a class="btn hot" href="https://n2329176.yclients.com/" target="_blank" rel="noopener">Записаться онлайн</a>
+        <a class="btn line" href="https://wa.me/79286323511?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%B2%20Serenity" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+      <dl class="contacts">
+        <div><dt>Почта</dt><dd><a href="mailto:spasuntopia@mail.ru">spasuntopia@mail.ru</a></dd></div>
+        <div><dt>Адрес</dt><dd>Махачкала, пос. Ленинкент, Террасная ул., 20</dd></div>
+        <div><dt>График работы</dt><dd>Ежедневно с 10:00 до 20:00</dd></div>
+      </dl>
+      <div class="soc">
+        <a href="https://yandex.ru/maps/-/CPTKmJJO" target="_blank" rel="noopener">Построить маршрут</a>
+        <a href="https://t.me/+79886907779" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.instagram.com/spa_suntopia/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <form class="form" id="lead" novalidate>
+      <h3>Заявка на массаж</h3>
+      <p class="sub">Мы перезвоним в течение рабочего дня.</p>
+      <div class="r2">
+        <label class="f">Ваше имя<input type="text" name="name" autocomplete="given-name" required></label>
+        <label class="f">Телефон<input type="tel" name="phone" autocomplete="tel" placeholder="+7 900 000-00-00" required></label>
+      </div>
+      <label class="f">Какой массаж<select id="fSvc" name="service"></select></label>
+      <div class="r2">
+        <label class="f">Дата<input type="date" id="fDate" name="date"></label>
+        <label class="f">Время
+          <select name="time">
+            <option value="">Подберите мне время</option>
+            <option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option>
+          </select>
+        </label>
+      </div>
+      <label class="f">Комментарий<textarea name="comment" placeholder="Что беспокоит, сколько человек придёт, есть ли пожелания"></textarea></label>
+      <label class="consent"><input type="checkbox" name="consent" required><span>Согласен(на) на обработку персональных данных для связи по записи. <a href="https://suntopia.ru/privacy.html" target="_blank" rel="noopener">Политика конфиденциальности</a></span></label>
+      <button class="btn hot" type="submit">Записаться</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© <span id="year"></span> Serenity. Массаж не заменяет лечения. Есть противопоказания, перед сеансом проконсультируйтесь со специалистом.</p>
+    <p>Данные об услугах и ценах взяты с <a href="https://suntopia.ru/" target="_blank" rel="noopener">suntopia.ru</a></p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
